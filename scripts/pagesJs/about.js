@@ -3,7 +3,7 @@ import loader from "../loader.js";
 import navRun from "../navBar.js";
 import toggleMode from "../toggleMode.js";
 
-loader()
+loader();
 window.addEventListener("scroll", () => {
   document
     .querySelector("nav")
