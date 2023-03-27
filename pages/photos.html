@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <!-- <link rel="stylesheet" href="../styles/photos.css" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Pacifico&family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&family=Rubik+Distressed&family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="../lightbox.css"> -->
+    <!-- icons cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../simplelightbox/dist/simple-lightbox.css" />
+    <title>Gallery</title>
+  </head>
+  <body>
+    <div class="loading" id="preloader">
+      <img src="../images/loader.gif" alt="" />
+    </div>
+    <!-- nav bar -->
+    <nav>
+      <div class="container nav__container">
+        <a href="../index.html" class="nav__logo"
+          ><img src="../images/logo.png" alt="logo"
+        /></a>
+        <ul class="nav__links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="./photos.html">Gallery</a></li>
+          <li><a href="./exhibitions.html">Exhibitions</a></li>
+          <li><a href="./about.html">About</a></li>
+        </ul>
+       <ul class="nav__social">
+          <li>
+            <a href="#" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="mode__container">
+          <span>Light</span>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <span>Purple</span>
+        </div>
+        <!--  -->
+        <button class="nav__toggle-btn" id="nav__toggle-open">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button class="nav__toggle-btn" id="nav__toggle-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- end nav bar -->
+    <!-- gallery -->
+    <section class="gallery__section">
+      <h1 class="text__head">Gallery</h1>
+      <div class="gallery-container">
+        <!-- <a
+          href="../images/gallery_portFolio/g1.jpg"
+          class="gallery-item"
+          data-lightbox="1"
+        >
+          <img src="../images/gallery_portFolio/g1.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g2.jpg"
+          class="gallery-item"
+          data-lightbox="2"
+        >
+          <img src="../images/gallery_portFolio/g2.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g3.jpg"
+          class="gallery-item"
+          data-lightbox="3"
+        >
+          <img src="../images/gallery_portFolio/g3.jpg" />
+          <a
+            href="../images/gallery_portFolio/g4.jpg"
+            class="gallery-item"
+            data-lightbox="4"
+          >
+            <img src="../images/gallery_portFolio/g4.jpg" />
+          </a>
+        </a>
+        <a
+          href="../images/gallery_portFolio/g5.jpg"
+          class="gallery-item"
+          data-lightbox="5"
+        >
+          <img src="../images/gallery_portFolio/g5.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g6.jpg"
+          class="gallery-item"
+          data-lightbox="6"
+        >
+          <img src="../images/gallery_portFolio/g6.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g7.jpg"
+          class="gallery-item"
+          data-lightbox="7"
+        >
+          <img src="../images/gallery_portFolio/g7.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g8.jpg"
+          class="gallery-item"
+          data-lightbox="8"
+        >
+          <img src="../images/gallery_portFolio/g8.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g9.jpg"
+          class="gallery-item"
+          data-lightbox="9"
+        >
+          <img src="../images/gallery_portFolio/g9.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g10.jpg"
+          class="gallery-item"
+          data-lightbox="10"
+        >
+          <img src="../images/gallery_portFolio/g10.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g11.jpg"
+          class="gallery-item"
+          data-lightbox="11"
+        >
+          <img src="../images/gallery_portFolio/g11.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g12.jpeg"
+          class="gallery-item"
+          data-lightbox="12"
+        >
+          <img src="../images/gallery_portFolio/g12.jpeg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g13.jpg"
+          class="gallery-item"
+          data-lightbox="13"
+        >
+          <img src="../images/gallery_portFolio/g13.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g14.jpg"
+          class="gallery-item"
+          data-lightbox="14"
+        >
+          <img src="../images/gallery_portFolio/g14.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g15.jpg"
+          class="gallery-item"
+          data-lightbox="15"
+        >
+          <img src="../images/gallery_portFolio/g15.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g16.jpg"
+          class="gallery-item"
+          data-lightbox="16"
+        >
+          <img src="../images/gallery_portFolio/g16.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g17.jpg"
+          class="gallery-item"
+          data-lightbox="17"
+        >
+          <img src="../images/gallery_portFolio/g17.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g18.jpg"
+          class="gallery-item"
+          data-lightbox="18"
+        >
+          <img src="../images/gallery_portFolio/g18.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g19.jpg"
+          class="gallery-item"
+          data-lightbox="19"
+        >
+          <img src="../images/gallery_portFolio/g19.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g20.jpg"
+          class="gallery-item"
+          data-lightbox="20"
+        >
+          <img src="../images/gallery_portFolio/g20.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g21.jpg"
+          class="gallery-item"
+          data-lightbox="21"
+        >
+          <img src="../images/gallery_portFolio/g21.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g22.jpg"
+          class="gallery-item"
+          data-lightbox="22"
+        >
+          <img src="../images/gallery_portFolio/g22.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g23.jpg"
+          class="gallery-item"
+          data-lightbox="23"
+        >
+          <img src="../images/gallery_portFolio/g23.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g24.jpg"
+          class="gallery-item"
+          data-lightbox="24"
+        >
+          <img src="../images/gallery_portFolio/g24.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g25.jpg"
+          class="gallery-item"
+          data-lightbox="25"
+        >
+          <img src="../images/gallery_portFolio/g25.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g26.jpg"
+          class="gallery-item"
+          data-lightbox="26"
+        >
+          <img src="../images/gallery_portFolio/g26.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g27.jpg"
+          class="gallery-item"
+          data-lightbox="27"
+        >
+          <img src="../images/gallery_portFolio/g27.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g28.jpg"
+          class="gallery-item"
+          data-lightbox="28"
+        >
+          <img src="../images/gallery_portFolio/g28.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g29.jpg"
+          class="gallery-item"
+          data-lightbox="29"
+        >
+          <img src="../images/gallery_portFolio/g29.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g30.jpg"
+          class="gallery-item"
+          data-lightbox="30"
+        >
+          <img src="../images/gallery_portFolio/g30.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g31.jpg"
+          class="gallery-item"
+          data-lightbox="31"
+        >
+          <img src="../images/gallery_portFolio/g31.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g32.jpg"
+          class="gallery-item"
+          data-lightbox="32"
+        >
+          <img src="../images/gallery_portFolio/g32.jpg" />
+        </a>
+        <a
+          href="../images/gallery_portFolio/g33.jpg"
+          class="gallery-item"
+          data-lightbox="33"
+        >
+          <img src="../images/gallery_portFolio/g33.jpg" />
+        </a> -->
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+      <div class="container footer__container">
+        <div class="footer__head">
+          <h2 class="footer__title">Mehra3228@gmail.com</h2>
+          <a href="mailto:mehra3228@gmail.com" class="footer__btn"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
+        </div>
+        <ul class="footer__links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/about.html">About</a></li>
+          <li><a href="../pages/photos.html">Gallery</a></li>
+          <li><a href="../pages/exhibitions.html">Exhibitions</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="../simplelightbox/dist/simple-lightbox.js"></script>
+    <script type="module" src="../scripts/pagesJs/photos.js"></script>
+    <!-- <script src="../lightbox-plus-jquery.js"></script> -->
+  </body>
+</html>
