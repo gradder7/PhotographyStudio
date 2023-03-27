@@ -4,7 +4,7 @@ import navRun from "./navBar.js";
 import swiper from "./swiperHome.js";
 import toggleMode from "./toggleMode.js";
 
-loader();
+// loader();
 // change nav style on scroll
 window.addEventListener("scroll", () => {
   document
